@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.main {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.collection {
+    margin-top: 20px;
+    height: 300px;
+}
+
+.collection .item {
+    height: 30px;
+    line-height: 30px;
+    width: 400px;
+    padding-left: 20px;
+}
+
+.collection .item:nth-child(even) {
+    background: #9f96ff;
+}
+
+.collection .item:nth-child(odd) {
+    background: #93ffb1;
+}
+
+.pageNum {
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.pageNum .page {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.pageNum .page .page-A {
+    display: block;
+    background: #666;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
+.avatarImg {
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>登陆结果</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <!--<script src="./javascripts/jquery.1.8.3.js"></script>-->
+    <script>
+        window.onload = function () {
+            var showTime = document.getElementsByClassName("showTime")[0];
+            var time = 3;
+            var timer = setInterval(function () {
+                if (time <= 0) {
+                    clearInterval(timer);
+                    location.href = "http://localhost:3000";
+                    return;
+                }
+                time = time - 1;
+                showTime.innerHTML = time + "s";
+            }, 1000);
+        }
+    </script>
+</head>
+<body>
+<div class="showTime">3s</div>
+<div class="show"><%= result %></div>
+</body>
+</html>

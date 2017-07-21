@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel="stylesheet" href="/stylesheets/index.css">
+</head>
+<body>
+<%- include("header"); %>
+<div class="main">
+    <ul class="collection">
+        <% for(var i = 0;i < result.length;i++){ %>
+        <li class="item"><%= result[i].content %></li>
+        <% } %>
+    </ul>
+
+    <ul class="pageNum">
+        <% for(var i = 1;i <= pagenum;i++){ %>
+        <li class="page"><a href="/?page=<%= i %>" class="page-A"><%= i %></a></li>
+        <% } %>
+    </ul>
+</div>
+</body>
+</html>

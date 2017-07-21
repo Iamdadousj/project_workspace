@@ -1,0 +1,14 @@
+<div class="header">
+    <div class="header-content">
+        <div class="header-comment"><a href="/comment">发表评论</a></div>
+        <% if(login){ %>
+        <div class="header-userName"><%= userName %></div>
+        <div class="header-userAvatar"><img src="<%= avatar %>" class="avatarImg"></div>
+        <div class="header-exit"><a href="/login/logout">退出</a></div>
+        <div class="header-avatar"><a href="/login/addAvatar">上传头像</a></div>
+        <% }else{ %>
+        <div class="header-login"><a href="/login">登录</a></div>
+        <div class="header-register"><a href="/register">注册</a></div>
+        <% } %>
+    </div>
+</div>
